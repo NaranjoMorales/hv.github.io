@@ -1,0 +1,364 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="estilo/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <style>
+            /* Estilo para centrar y aplicar negrita al texto */
+            #areaAdmin {
+              text-align: center; /* Centra el texto */
+            }
+          </style>
+    </head>
+    <body > 
+       
+<div id="elementoParaOcultar2" style="display: block"> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p id="areaAdmin" > <strong>  INGRESO USUARIO </strong> </p>
+        <div id="areaAdmin"> <strong>Ingrese nickname: </strong>
+            <input type="text" id="bre" >
+        </div>
+        <div id="areaAdmin"><strong> Ingrese password: </strong>
+            <input type="password" id="word">
+        
+            <br><br>
+            <button id="istro" type="button" class="btn btn-success"> <strong> Ingresar </strong></button>
+        </div>
+       </p> <br><br>
+        <!--  el siguiente es el boton de "nuevo registro lo inhabilitare par  usarlo despues"-->
+        <!-- <button id="oc">Registar nuevo usuario </button>  -->
+        <!--<div id="elemento2"  style="display: none;">   ghahgst  </div> -->
+</div>
+    
+<div id="elementoParaOcultar" style="display: none"> 
+        <br>
+    <p id="areaAdmin"> <strong> AREA DE ADMINISTRADOR  </strong></p>
+    <br><br>
+    <p> <strong> REGISTRO USUARIO</strong></p>
+            <div><strong> Registra nickname: </strong>
+               <input type="text" id="nom">
+            
+            <strong>Confirme nickname: </strong>
+               <input type="text" id="n">
+            </div>
+            <div> <strong>Registra password: </strong>
+               <input type="password" id="pas">
+            
+            <strong>Confirme password : </strong>
+               <input type="password" id="p">
+            </div>
+            <br><br>
+            <div>
+                    <button id="reg" type="button" class="btn btn-primary"> <strong> Registrar </strong></button>
+                    <button id="regresarIngreso" type="button" class="btn btn-primary"><strong>Ir al ingreso </strong></button>
+            </div>
+            <p id="most"></p> <br><br><br><br><br><br>        
+</div>
+
+    <br>
+<!-- datos del admi para saber quien es el encargado despues de entrar nick name y contraseña-->
+<div id="elementoParaOcultar3" style="display: none" >    
+    <p id="areaAdmin"><strong> DATOS DEL INSTRUCTOR </strong></p>
+    <div id="areaAdmin">
+    
+            <input type="text" id="nombreInstru"> //
+            <input type="text" id="centroFormacion"> //
+            <input type="email" id="correoElectronico"> //
+            <input type="text" id="numeroTelefonico">
+            <div>
+                <strong> Nombre completo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Centro de formacion&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo electronico&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Numero telefonico </strong>
+            </div>
+            <br><br><br>
+            <div id="areaAdmin"><p><strong>¿QUE ROL ADOPTARA EL INSTRUCTOR?</strong></p>
+                <select id="opciones4">
+                    <option value="seguimientoEtapaProductiva">Seguimiento Etapa Productiva</option>
+                    <option value="liderDeFicha">Lider de Ficha</option>
+                </select>
+                <button onclick="rolInstru()">Asignar</button>
+            </div>
+            <br><br><br>
+            <button id="datosInstru"> GUARDAR </button>
+            <button id="volverIngreso">VOLVER INGRESO</button>
+            
+    </div>
+ 
+</div>
+<div id="most2"></div>
+<div id="imprimirInstru"> </div>
+<br><br><br><br>
+<div id="elementoParaOcultar5">
+<button id="pony">prueba impresion</button>
+</div>
+<div id="deje1"></div>
+<div id="elementoParaOcultar4">
+    <button id="editarInstru">EDITAR DATOS INSTRUCTOR</button>
+    <!--funcion ocultar--> 
+    <button id="volverIngreso2">VOLVER INGRESO</button>
+</div>
+<br><br><br><br>
+<div><strong><center>¿ QUE DESEAS HACER EN LA TABLA GENERAL ?</center></strong></div>
+<br><br><br>
+
+<p id="areaAdmin" >
+    
+    <button class="miBoton" id="botonCrearempresa" > &nbsp; Crear &nbsp;  Objeto </button>
+
+    <button class="miBoton" id="botonBuscarEmpresa">Buscar Objeto</button>
+
+    
+    
+</p> 
+      <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+      
+<div id="elementoParaOcultar15" style="display: none">
+    <br><br><br>
+    <div id="areaAdmin"><p><strong>¿QUE DESEAS CREAR?</strong></p>
+        <select id="opciones2">
+            <option value="Empresa">Empresa</option>
+            <option value="Supervisor">Supervisor</option>
+            <option value="Aprendiz">Aprendiz</option>
+        </select>
+        <button onclick="opcionCrear()">Buscar</button>
+    </div>
+</div>
+    <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+<div id="elementoParaOcultar10" style="display: none"> 
+        <br><br><br>
+        <div id="areaAdmin"></p> <strong>¿QUE DESEAS BUSCAR?</strong><br>
+          <select id="opciones">
+            <option value="empresa">Empresa</option>
+            <option value="supervisor">Supervisor</option>
+            <option value="aprendiz">Aprendiz</option>
+          </select>
+          <button onclick="mostrarOpcionSeleccionada()">Buscar</button>
+         </div> 
+          <br><br><br><br>
+    </div>
+    <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+
+<div id="elementoParaOcultar8" style="display: none"> 
+        <br><br><br><br>
+        <div><strong> CREAR EMPRESA: </strong> </div>
+        <br>
+        <div>
+        Nombre empresa:
+        <input type=text id="empresa">
+
+        NIT empresa: 
+        <input type=text id="nito">
+        <button id="crearEmpresa"> Guardar</button>
+        </div>
+        <br>
+
+        <div> <strong> Agregar:</strong> 
+            <button id="masSupervisor"><strong>+</strong></button>
+             Supervisor
+            
+        </div>
+</div>
+<div id="elementoParaOcultar13" style="display: none" > 
+        <br><br>
+        <div> <strong> CREAR SUPERVISOR:</strong> </div>
+        <br>
+       
+            Nombre supervisor: 
+            <input type=text id="super">
+            Contacto Supervisor:
+            <input type=text id="contac">
+</div>
+<div id="elementoParaOcultar18"  style="display: none">
+            <button id="acusuper"> Guardar </button>
+</div>
+<div id="elementoParaOcultar19"  style="display: none">
+            <button id="acusuperingreso"> Guardar ingreso </button>
+</div>
+
+            <br>
+
+        
+
+<div id="elementoParaOcultar14" style="display: none"> 
+        <div> <strong> CREAR APRENDIZ:</strong> </div>
+
+        <br>
+        
+            Nombre Aprendiz:
+            <input type=text id="nomAprendiz">
+            Identificacion Aprendiz:
+            <input type=text id="idAprendiz">
+            &nbsp;&nbsp;&nbsp;&nbsp;Ficha Aprendiz:
+            <input type=text id="fichaAprendiz">
+        </div>
+        <div id="elementoParaOcultar31" style="display: none">
+            <button id="crearAprendiz"> Guardar aprendiz  </button>
+        </div> 
+        <div id="elementoParaOcultar32" style="display: none">
+            <button id="crearaprendizingreso"> Guardar Ingreso aprendiz</button> 
+        </div>  
+            
+  </div>   
+  <div id="elementoParaOcultar20"  style="display: none"> 
+    <strong> Agregar:</strong> 
+    <button id="masAprendiz"><strong>+</strong></button>
+        Aprendiz
+</div>       
+            <br>
+            <button id="pony2"> imprimir </button>
+
+            <div id="deje2"></div>
+            <!--buscador y modificador de empresa-->
+            <br><br><br>
+ 
+
+
+
+
+
+
+<div id="elementoParaOcultar9" style="display: none"> 
+           <div><strong> BUSCAR EMPRESAS: </strong> </div>
+            <br>
+</div>
+<div id="elementoParaOcultar17" style="display: none">
+    <div><strong> A QUE EMPRESA DESEAS AGREGAR EL SUPERVISOR?: </strong> </div>
+    <br>
+</div>
+<div id="elementoParaOcultar16"  style="display: none">           
+                buscar por  empresa:
+                <input type="text" id="buscaempresa">
+                buscar por NIT:
+                <input type="text" id="buscaNit">
+            
+</div>
+<div  id="elementoParaOcultar21"  style="display: none">
+                <button id="botomBusqueda">buscar</button>   
+</div>
+<div  id="elementoParaOcultar25"  style="display: none">
+                <button id="modificarEmpresa">Editar </button>
+</div>
+            <div>
+                <div id="empresaEncontrada"></div>
+            </div>
+<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+
+<div id="elementoParaOcultar11" style="display: none"> 
+<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+        <div><strong> BUSCAR SUPERVISOR: </strong> </div>
+</div>
+<div id="elementoParaOcultar26" style="display: none">
+    <div><strong> A QUE SUPERVISOR DESEAS AGREGAR EL APRENDIZ?: </strong> </div>
+</div>
+        <br>
+        <div id="elementoParaOcultar27" style="display: none"> 
+            buscar por supervisor:
+            <input type="text" id="buscaSupervisor">
+            
+        </div>
+        <div  id="elementoParaOcultar28" style="display: none">
+            <button id="botomBusqueda2">buscar</button>
+        </div>
+        <div  id="elementoParaOcultar29" style="display: none">
+            <button id="modificarSupervisor">Editar </button>
+        </div>
+        <div>
+            <div id="supervisorEncontrado"></div>
+        </div>
+<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+
+<div id="elementoParaOcultar12" style="display: none"> 
+<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+        <div><strong> BUSCAR APRENDIZ: </strong> </div>
+        <br>
+        <div> 
+            buscar por aprendiz:
+            <input type="text" id="buscaAprendiz">
+            buscar por identificacion:
+            <input type="text" id="buscaIdentificacionAprendiz">
+        </div>
+        <div>
+            <button id="botomBusqueda3">buscar</button>
+            <button id="modificarAprendiz">Editar </button>
+        </div>
+            <div id="aprendizEncontrado"></div>
+<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+</div>
+
+<div id="elementoParaOcultar7" style="display: none"> 
+
+    <br><br>
+    <div><strong> EDITAR EMPRESAS: </strong> </div>
+    <br>
+    <div> editar  empresa:
+        <input type="text" id="editarEmpresa">
+        editar NIT:
+        <input type="text" id="editarNit">
+    </div>
+    <div>
+        <button id="guardarCambiosEmpresas">guardar</button>
+        <br><br><br>
+    </div>
+</div>
+<br><br><br>
+<!-- aca edision supervisor -->
+<br><br>
+<div id="elementoParaOcultar22"  style="display: none">
+    <div><strong> EDITAR SUPERVISOR: </strong> </div>
+    <br>
+    <div> editar  supervisor:
+    <input type="text" id="editarsupervisor">
+    
+    <button id="guardarCambiosSupervisor">guardar</button>
+    </div>
+</div>
+
+<br><br><br>
+<div id="elementoParaOcultar23"  style="display: none">
+    <div><strong> EDITAR APRENDIZ: </strong> </div>
+    <br>
+    <div> editar nombre aprendiz:
+    <input type="text" id="editaraprendiz">
+
+    editar identificacion aprendiz:
+    <input type="text" id="editaridentificacionaprendiz">
+    editar ficha aprendiz:
+    <input type="text" id="editarfichaaprendiz">
+ 
+    <button id="guardarCambiosAprendiz">guardar</button>
+    </div>
+    <br><br><br>
+    <!-- XXXXXXXXXX-->
+</div>
+
+
+<div id="elementoParaOcultar24"  style="display: block">
+        <scroll-container>
+        <table class="table" > 
+            <thead class="thead-dark">
+                <tr>
+                
+                    <td scope="col"> Nombre empresa</td>
+                    <td scope="col">nit</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td id="deje3"></td>
+                
+                </tr>
+            </tbody>
+        </table>
+        </scroll-container>
+        <br><br><br><br><br><br><br><br>
+</div>
+
+       <script type= "module" src="main.js" ></script>
+      
+      
+      
+    </body>
+</html>
+
+
+
+
+

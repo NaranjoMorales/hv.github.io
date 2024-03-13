@@ -1,0 +1,51 @@
+body {
+  /* Establecer un degradado lineal como fondo */
+  background: linear-gradient(to right, #0dff01d5, #ffffff); /* Puedes cambiar los colores según lo desees */
+  /* Asegurarse de que el degradado ocupe toda la pantalla */
+  background-size: cover;
+  /* No repetir el fondo */
+  background-repeat: no-repeat;
+  /* Fijar el fondo para que no se desplace con el contenido */
+  background-attachment: fixed;
+  /* Establecer una altura del 100% para cubrir toda la pantalla */
+  height: 100vh;
+  /* Establecer el fondo de pantalla como fondo de la pantalla completa */
+  background-attachment: fixed;
+  /* Asegurar que el contenido esté en la parte superior */
+  z-index: -1;
+}
+
+.miBoton {
+  width: 200px;
+  padding: 15px 25px; /* Ajusta el padding según tus preferencias */
+  font-size: 25px; /* Ajusta el tamaño de fuente según tus preferencias */
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 auto; /* Centra horizontalmente */
+}
+
+
+scroll-container {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  border: 5px solid #000000;
+}
+
+scroll-container {
+  display: block;
+  width: 1000px;
+  height: 150px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+scroll-page {
+  display: flex;
+ 
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 5em;
+}
+
